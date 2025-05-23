@@ -1,9 +1,7 @@
 import pandas as pd
 
 
-def get_iris_subsets(iris) -> tuple[pd.DataFrame, pd.DataFrame]:
-    df = pd.DataFrame(iris.data, columns=iris.feature_names)
-
+def get_iris_subsets(iris) -> tuple[pd.DataFrame, pd.DataFrame]
     df = pd.DataFrame(iris.data, columns=iris.feature_names)
 
     df['species'] = [iris.target_names[i] for i in iris.target]
